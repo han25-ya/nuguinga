@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet"> -->
+	<style>
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+</style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>누구인가?</title>
+    <meta name="title" content="누구인가?">
+    <meta name="subject" content="이 궁예가 네놈의 직업을 봐줄 터이니 얼른 들어와 보거라.">
+    <meta name="keywords" content="동물상 테스트, 인공지능, 궁예, 왕, 머슴, AI , 전생, 나와 닮은 배우, 사극">
+    <meta name="author" content="조한준">
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="https://nuguinga.site" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<!-- <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+	<style>
+      @import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap");
+    </style> -->
+    <meta property="og:url" content="https://nuguinga.site" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="누구인가?" />
+    <meta property="og:description" content="나는 궁예. 이 관심법으로 만물을 통찰하고 꿰뚫어보는 존재이니. 본래 내가 이렇게 관심법을 자주 쓰는 것도 아니니 한 번들어와보거라"
+    />
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e64b3727e862b06"></script>
+</head>
+
+<body>
+	<div class="header_menu_wrap">
+    <nav class="p-3 container navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="https://nuguinga.site/">누구인가?</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">누구인가?
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" id="yotube-top-link" href="https://www.youtube.com/channel/UC-NuKnMevJURTXadWs_1APQ">제작자 채널</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+	</div>
+	<!-- <div class="box01"> -->
+    <section class="section">
+        <h1 class="title">누구인가?</h1>
+        <h2 class="subtitle">궁예가 봐주는 직업 테스트</h2>
+        <h2 class="sr-only">네놈의 천직이 궁금하지 않은가? 내 친히 봐 드리지.</h2>
+        <h3 class="sr-only">궁예가 당신의 천직을 찾아줍니다.</h3>
+        <h4 class="sr-only">본 서비스는 Google의 인공지능 teachable machine 2.0을 활용하였습니다.</h4>
+        <p class="sr-only">내 본래 미천한 것들에게 얼굴을 들어내 보이지 않는다만은 이번에 내가 친히 이곳에 내려왔다. 그리고 내 친히 네놈들의 얼굴을 봐줄까하니 얼른와서 얼굴을 내밀어 보거라</p>
+    </section>
+    <!-- <h3 class="pb-2 d-flex justify-content-center">성별을 선택하세요</h3> -->
+    <section class="d-flex justify-content-center">
+        <p class="d-flex align-items-center pr-3">여자</p>
+        <div>
+            <input type="checkbox" id="gender">
+            <label for="gender">
+                <span class="knob">
+                    <i></i>
+                </span>
+            </label>
+        </div>
+        <p class="d-flex align-items-center pl-3">남자</p>
+    </section>
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <div class="mt-3 container file-upload">
+        <div class="image-upload-wrap">
+            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+            <div class="drag-text">
+                <img src="img/eye_icon-icons.com_71204 (3).svg" class="mt-5 pt-5 upload">
+                <h3 class="mb-5 pb-5 pt-4  upload-text">여길 눌러라</h3>
+            </div>
+        </div>
+		<div class="noti">*사용자의 사진은 어디에도 저장되지 않습니다</div>
+        <div class="file-upload-content">
+            <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+            <div id="loading" class="animated bounce">
+                <div class="spinner-border" role="status">
+                    <span class="sr-only">음...보아하니 네놈은</span>
+                </div>
+                <p class="text-center">궁예가 당신의 직업을 분석중입니다.</p>
+            </div>
+            <p class="result-message"></p>
+            <div id="label-container" class="d-flex flex-column justify-content-around"></div>
+            <div id="addThis" class="addthis_inline_share_toolbox_6lz1"></div>
+
+            <div class="pt-3 image-title-wrap">
+                <button type="button p-2" class="try-again-btn" onclick="window.location.reload();">
+                    <span class="try-again-text">다른 사람으로 봐줄까?</span>
+                </button>
+            </div>
+        </div>
+    </div>
+	</div>
+    <footer class="footer pt-5 container d-flex justify-content-center">
+        <div>
+            <p>&copy; 본 사이트는 조코딩채널의 영상을 참고하여 만들어 졌습니다. </p>
+        </div>
+    </footer>
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $('.image-upload-wrap').hide();
+                    $('#loading').show();
+                    $('.file-upload-image').attr('src', e.target.result);
+                    $('.file-upload-content').show();
+                    $('.image-title').html(input.files[0].name);
+                };
+                reader.readAsDataURL(input.files[0]);
+                init().then(function() {
+                    console.log("hello");
+                    predict();
+                    $('#loading').hide();
+                });
+            } else {
+                removeUpload();
+            }
+        }
+
+        function removeUpload() {
+            $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+            $('.file-upload-content').hide();
+            $('.image-upload-wrap').show();
+        }
+        $('.image-upload-wrap').bind('dragover', function() {
+            $('.image-upload-wrap').addClass('image-dropping');
+        });
+        $('.image-upload-wrap').bind('dragleave', function() {
+            $('.image-upload-wrap').removeClass('image-dropping');
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <script type="text/javascript">
+        let URL;
+        const urlMale = "https://teachablemachine.withgoogle.com/models/HMvhzCp1_/";
+        const urlFemale = "https://teachablemachine.withgoogle.com/models/kr6af5lN_/";
+        let model, webcam, labelContainer, maxPredictions;
+        async function init() {
+            if (document.getElementById("gender").checked) {
+                URL = urlMale;
+            } else {
+                URL = urlFemale;
+            }
+            const modelURL = URL + "model.json";
+            const metadataURL = URL + "metadata.json";
+            model = await tmImage.load(modelURL, metadataURL);
+            maxPredictions = model.getTotalClasses();
+            labelContainer = document.getElementById("label-container");
+            for (let i = 0; i < maxPredictions; i++) {
+                var element = document.createElement("div")
+                element.classList.add("d-flex");
+                labelContainer.appendChild(element);
+            }
+        }
+        async function predict() {
+            var image = document.getElementById("face-image")
+            const prediction = await model.predict(image, false);
+            prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+            console.log(prediction[0].className);
+            var resultTitle, resultExplain, resultCeleb;
+            if (document.getElementById("gender").checked) {
+                switch (prediction[0].className) {
+                    case "king":
+                        resultTitle = "왕"
+                        resultExplain = "네놈은 왕이 될 상이로구나. 고귀하고, 기품있다. 무엇보다 주변에 있는 모두가 너를 믿고 의지하고있지? 이 관심법으로 다 볼 수 있다."
+                        resultCeleb = "닮은 연예인: 유재석, 강호동, 신동엽"
+                        break;
+                    case "seller":
+                        resultTitle = "장사꾼"
+                        resultExplain = "네놈은 장사꾼이 될 상이도다. 나중에 크게 될 대목이군. 상황을 읽을 수 있는 지혜가 있고, 무엇보다 다른사람의 필요를 파악하는 능력이 뛰어난 자로다."
+                        resultCeleb = "닮은 연예인: 백종원, 조보아씨!, 이것 좀, 먹어봐유"
+                        break;
+                    case "dosa":
+                        resultTitle = "도사"
+                        resultExplain = "네놈은 도사가 될 상이로구나. 거울을 보면서 '솔직히 나 정도면..'이라는 생각을 하지? 분명 강동원사진을 사용했는데 왜 니가 나왔을까"
+                        resultCeleb = "닮은 연예인: 원빈, 강동원, 장동건"
+                        break;
+                    case "generer":
+                        resultTitle = "장군"
+                        resultExplain = "네 놈은 요컨데 천재상이로구나. 누구나 인정할 수 밖에 없는 능력을 가지고 있도다. 하지만 그 이면에 있는 노력들이 함께 보이는구나."
+                        resultCeleb = "닮은 연예인: 헨리, 서장훈, 랩몬스터"
+                        break;
+                    case "meosum":
+                        resultTitle = "???:마님,"
+                        resultExplain = "지가 이 두 눈으로 똑똑히 봤구먼유...넌 머슴."
+                        resultCeleb = "닮은 연예인: 있을리가"
+                        break;
+                    default:
+                        resultTitle = "알수없음"
+                        resultExplain = ""
+                        resultCeleb = ""
+                }
+            } else {
+                switch (prediction[0].className) {
+                    case "king":
+                        resultTitle = "여왕"
+                        resultExplain = "네 놈은 참으로 고상한 자태를 품고있군. 참으로 기품이 넘치는 도다. 누구나 쉽게 다가올 수 없는 아우라를 가지고 있어"
+                        resultCeleb = "닮은 연예인: 미나, 이영애, 전지현, 서지혜"
+                        break;
+                    case "seller":
+                        resultTitle = "공주"
+                        resultExplain = "네 놈은 참으고 아릅다운 자태를 가지고 있군. 참으로 고상하고 귀여운 얼굴을 가지고있도다. 학창시절에 인기가 많았을 상이로구나."
+                        resultCeleb = "닮은 연예인: 박보영, 아이유, 태연"
+                        break;
+                    case "dosa":
+                        resultTitle = "예술가"
+                        resultExplain = "네 놈은 뛰어난 미적감각을 가지고 있구나. 자신의 외모에 관심이 많지? 하지만 굳이 가꾸지 않아도 아름다운 얼굴이도다."
+                        resultCeleb = "닮은 연예인: 송혜교, 한가인, 김태희, 김희선"
+                        break;
+                    case "generer":
+                        resultTitle = "여장부"
+                        resultExplain = "네 놈은 참으로 듬직하구나. 주변에서 신임을 많이 받고 있지? 그게 다 니 노오력을 통한 것이니 자신감을 갖도록 하거라."
+                        resultCeleb = "닮은 연예인: 이나영, 나연, 김세정, 강미나"
+                        break;
+                    case "meosum":
+                        resultTitle = "도덕인"
+                        resultExplain = "네 놈은 사람들의 말을 잘 듣고 따르는 참으로 도덕적인 인품을 갖고 있구나. 허나 기구하게도 그 도덕심이 과하면 다른 사람들이 깔보니 항상 조심하도록 하여랴"
+                        resultCeleb = "닮은 연예인: 한지민, 신애라, 아이유"
+                        break;
+                    default:
+                        resultTitle = "알수없음"
+                        resultExplain = ""
+                        resultCeleb = ""
+                }
+            }
+            var title = "<div class='" + prediction[0].className + "-animal-title'>" + resultTitle + "</div>"
+            var explain = "<div class='animal-explain pt-2'>" + resultExplain + "</div>"
+            var celeb = "<div class='" + prediction[0].className + "-animal-celeb pt-2 pb-2'>" + resultCeleb + "</div>"
+            $('.result-message').html(title + explain + celeb);
+            var barWidth;
+            for (let i = 0; i < maxPredictions; i++) {
+                if (prediction[i].probability.toFixed(2) > 0.1) {
+                    barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + "%";
+                } else if (prediction[i].probability.toFixed(2) >= 0.01) {
+                    barWidth = "4%"
+                } else {
+                    barWidth = "2%"
+                }
+                var labelTitle;
+                switch (prediction[i].className) {
+                    case "king":
+                        labelTitle = "기품"
+                        break;
+                    case "seller":
+                        labelTitle = "능력"
+                        break;
+                    case "dosa":
+                        labelTitle = "외모"
+                        break;
+                    case "generer":
+                        labelTitle = "리더쉽"
+                        break;
+                    case "meosum":
+                        labelTitle = "매력"
+                        break;
+                    // case "deer":
+                    //     labelTitle = "사슴상"
+                    //     break;
+                    // case "fox":
+                    //     labelTitle = "여우상"
+                    //     break;
+                    default:
+                        labelTitle = "알수없음"
+                }
+                var label = "<div class='animal-label d-flex align-items-center'>" + labelTitle + "</div>"
+                var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
+                labelContainer.childNodes[i].innerHTML = label + bar;
+            }
+        }
+    </script>
+    <script>
+        function iosApp() {
+            document.getElementById("coupang").style.display="none";
+            $("#coupang ins").hide();
+            document.getElementById("addThis").style.display="none";
+            document.getElementById("disqus_thread").style.display="none";
+            var kakao = document.getElementsByClassName("kakao_ad_area");
+            for (var i = 0; i < kakao.length; i++) {
+              if(kakao[i]) {
+                  kakao[i].style.display="none";
+              }
+            }
+            document.getElementById("yotube-top-link").style.display="none";
+            document.getElementById("yotube-mid-link").style.display="none";
+            document.getElementById("yotube-bottom-link").style.display="none";
+        }
+    </script>
+</body>
+<!-- 
+image input box
+Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+gender toggle
+Copyright (c) 2020 by Mert Cukuren (https://codepen.io/knyttneve/pen/bPpEZY)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ -->
+
+</html>
