@@ -247,23 +247,7 @@ body {
   border-radius: 10px;
   background-color: rgba(117, 204, 84, 0.2);
 }
-/* .deer-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-  background-color: rgba(117, 204, 84, 0.2);
-}
-.deer-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  background-color: rgba(117, 204, 84, 1); */
-}
+
 .king-box {
   position: absolute;
   top: 0;
@@ -350,7 +334,7 @@ body {
   background-color: rgba(235, 166, 190, 1);
 }
 .percent-text {
-  font-size: 1rem;
+  font-size: 2rem;
   color: #ffffff;
 }
 .animal-label {
@@ -369,7 +353,7 @@ body {
 
 
 .animal-explain {
-    font-size: 1.5rem;
+    font-size: 3rem;
 	color: #000000
 }
 .meosum-animal-title {
@@ -377,49 +361,49 @@ body {
 }
 .meosum-animal-celeb {
     color: #3ba363;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 .deer-animal-title {
     color: #3ba363;
 }
 .deer-animal-celeb {
     color: #3ba363;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 .seller-animal-title {
     color: #ff6c0a;
 }
 .seller-animal-celeb {
     color: #ff6c0a;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 .king-animal-title {
     color: #548dd4;
 }
 .king-animal-celeb {
     color: #548dd4;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 .dosa-animal-title {
     color: #e56995;
 }
 .dosa-animal-celeb {
     color: #e56995;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 .generer-animal-title {
     color: #9b6b43;
 }
 .generer-animal-celeb {
     color: #9b6b43;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 .fox-animal-title {
     color: #31849b;
 }
 .fox-animal-celeb {
     color: #31849b;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
 /* gender */
@@ -435,6 +419,7 @@ label {
   box-shadow: 0 0 0 8px #e5e9ea inset;
   border-radius: 30px;
   position: relative;
+  font-size: 2rem;
 }
 
 .knob {
