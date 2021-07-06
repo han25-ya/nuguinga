@@ -6,7 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet"> -->
 	<style>
 @import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
 </style>
@@ -47,7 +46,6 @@
         </div>
     </nav>
 	</div>
-	<!-- <div class="box01"> -->
     <section class="section">
         <h1 class="title">누구인가?</h1>
         <h2 class="subtitle">내 언제나 보고있다네</h2>
@@ -56,7 +54,6 @@
         <h4 class="sr-only">본 서비스는 Google의 인공지능 teachable machine 2.0을 활용하였습니다.</h4>
         <p class="sr-only">내 본래 미천한 것들에게 얼굴을 들어내 보이지 않는다만은 이번에 내가 친히 이곳에 내려왔다. 그리고 내 친히 네놈들의 얼굴을 봐줄까하니 얼른와서 얼굴을 내밀어 보거라</p>
     </section>
-    <!-- <h3 class="pb-2 d-flex justify-content-center">성별을 선택하세요</h3> -->
     <section class="d-flex justify-content-center">
         <p class="d-flex align-items-center pr-3">여자</p>
         <div>
@@ -172,28 +169,28 @@
                 switch (prediction[0].className) {
                     case "king":
                         resultTitle = "왕"
-                        resultExplain = "네놈은 왕이 될 상이로구나. 고귀하고, 기품있다. 무엇보다 주변에 있는 모두가 너를 믿고 의지하고있지? 이 관심법으로 다 볼 수 있다."
+                        resultExplain = "네놈 사진이 내 눈을 가리는구나. 어쨋든 네놈은 왕이 될 상이로구나. 고귀하고, 기품있다. 무엇보다 주변에 있는 모두가 너를 믿고 의지하고있지? 이 관심법으로 다 볼 수 있다."
                         resultCeleb = "닮은 연예인: 유재석, 강호동, 신동엽"
                         break;
                     case "seller":
                         resultTitle = "장사꾼"
-                        resultExplain = "네놈은 장사꾼이 될 상이도다. 나중에 크게 될 대목이군. 상황을 읽을 수 있는 지혜가 있고, 무엇보다 다른사람의 필요를 파악하는 능력이 뛰어난 자로다."
+                        resultExplain = "네 이것을 감히 내 앞을 가리다니. 일단 넘어가고 네놈은 장사꾼이 될 상이도다. 나중에 크게 될 대목이군. 상황을 읽을 수 있는 지혜가 있고, 무엇보다 다른사람의 필요를 파악하는 능력이 뛰어난 자로다."
                         resultCeleb = "닮은 연예인: 백종원, 조보아씨!, 이것 좀, 먹어봐유"
                         break;
                     case "dosa":
                         resultTitle = "도사"
-                        resultExplain = "네놈은 도사가 될 상이로구나. 거울을 보면서 '솔직히 나 정도면..'이라는 생각을 하지? 분명 강동원사진을 사용했는데 왜 니가 나왔을까"
+                        resultExplain = "네놈은 도사가 될 상이로구나. 거울을 보면서 '솔직히 나 정도면..'이라는 생각을 하지? 분명 강동원사진을 사용했는데 왜 니가 나왔을까?기만자쉑"
                         resultCeleb = "닮은 연예인: 원빈, 강동원, 장동건"
                         break;
                     case "generer":
                         resultTitle = "장군"
-                        resultExplain = "네 놈은 요컨데 천재상이로구나. 누구나 인정할 수 밖에 없는 능력을 가지고 있도다. 하지만 그 이면에 있는 노력들이 함께 보이는구나."
+                        resultExplain = "사진이 눈을 가리는구나. 어처피 꽤뚫어 볼 수 있으니 넘어가고 네 놈은 요컨데 천재상이로구나. 누구나 인정할 수 밖에 없는 능력을 가지고 있도다. 하지만 그 이면에 있는 노력들이 함께 보이는구나."
                         resultCeleb = "닮은 연예인: 헨리, 서장훈, 랩몬스터"
                         break;
                     case "meosum":
                         resultTitle = "???:마님,"
-                        resultExplain = "지가 이 두 눈으로 똑똑히 봤구먼유...넌 머슴."
-                        resultCeleb = "닮은 연예인: 있을리가"
+                        resultExplain = "지가 이 두 눈으로 똑똑히 봤구먼유"
+                        resultCeleb = "닮은 연예인:머슴머슴머슴머슴머슴머슴머슴머슴머슴머슴머슴머슴머슴머슴머슴머슴"
                         break;
                     default:
                         resultTitle = "알수없음"
@@ -224,7 +221,7 @@
                         break;
                     case "meosum":
                         resultTitle = "도덕인"
-                        resultExplain = "네 놈은 사람들의 말을 잘 듣고 따르는 참으로 도덕적인 인품을 갖고 있구나. 허나 기구하게도 그 도덕심이 과하면 다른 사람들이 깔보니 항상 조심하도록 하여랴"
+                        resultExplain = "네 놈은 사람들의 말을 잘 듣고 따르는 참으로 도덕적인 인품을 갖고 있구나. 허나 기구하게도 그 도덕심이 과하면 다른 사람들이 깔보니 항상 조심하도록 하여라. 근데 사진이 눈을 가리니까 조금 작은걸 올려라"
                         resultCeleb = "닮은 연예인: 한지민, 신애라, 아이유"
                         break;
                     default:
@@ -263,12 +260,7 @@
                     case "meosum":
                         labelTitle = "매력"
                         break;
-                    // case "deer":
-                    //     labelTitle = "사슴상"
-                    //     break;
-                    // case "fox":
-                    //     labelTitle = "여우상"
-                    //     break;
+     
                     default:
                         labelTitle = "알수없음"
                 }
