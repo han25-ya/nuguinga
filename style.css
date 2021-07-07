@@ -11,13 +11,7 @@ body {
   
 }
 
-	
-} */
 
-.ad-banner {
-	width: 320px;
-	margin: 0 auto;
-}
 
 .noti{
 	margin-top: 10px;
@@ -26,16 +20,9 @@ body {
 	font-family: cursive;
 }
 
-/* .box01{
-	width:100%;
-	height:100%;
-	background-image:url('./img/gung12.png');
-	background-position:center;
-	background-size:cover;
-	} */
+
 
 .header_menu_wrap {
-	/* background-color: rgb(255, 255, 255); */
 	    z-index: 2;
     padding: 20px 20px;
     background-color: rgb(255, 255, 255);
@@ -49,8 +36,6 @@ body {
     padding: 15% 3%;
     margin: 0 auto;
     border-radius: 10px;
-    /* border: solid 1.5px #f6f7fa;
-    background-color: #e9e9e9  */
 }
 .file-upload-btn {
   width: 100%;
@@ -106,16 +91,13 @@ body {
     object-fit: contain;
     border-radius: 30px;
     border: 1rem solid rgba(0, 0, 0, 0.5); 
-	/* outline-style: solid;
-	outline-width: thick;*/
 	background-color: rgba(250, 235, 215, 0.5); 
 	
 }
 
 .image-dropping,
 .image-upload-wrap:hover {
-    background-color: /*#bdbebd*/ /*#f7e600;*/ rgba(204, 204, 204, 0.5);
-    /* border: 1.5px dashed #ffffff; */
+    background-color: rgba(204, 204, 204, 0.5);
 }
 
 .image-title-wrap {
@@ -184,6 +166,7 @@ body {
   line-height: 1.67;
   text-align: center;
   color: #35465d;
+  font-size: 4rem;
 }
 
 .subtitle {
@@ -335,14 +318,15 @@ body {
     width: 20%;
     text-align: left;
     height: 2rem;
-	color: #000000
+	color: #000000;
+	font-size: 2rem;
 }
 #label-container {
     width: 80%;
     margin: 0 auto;
 }
 .result-message {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 
