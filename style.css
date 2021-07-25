@@ -330,13 +330,13 @@ body {
 }
 .percent-text {
   font-size: 2rem;
-  color: #ffffff;
+  color: #000000;
 }
 .animal-label {
     width: 20%;
     text-align: left;
     height: 2rem;
-	color: #000000;
+	color: #808080;
 	font-size: 2rem;
 }
 #label-container {
@@ -349,8 +349,8 @@ body {
 
 
 .animal-explain {
-    font-size: 3rem;
-	color: #000000
+    font-size: 2rem;
+	color: #808080
 }
 .meosum-animal-title {
     color: #3ba363;
