@@ -14,7 +14,8 @@ body {
 .cleatorlink{
 	margin-top: 10px;
 	font-size: 5px;
-	color: #808080;
+	color: #ffffff;
+	opacity: 0;
 	font-family: cursive;
 }
 
