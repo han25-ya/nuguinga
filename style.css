@@ -11,6 +11,13 @@ body {
   
 }
 
+.cleatorlink{
+	margin-top: 10px;
+	font-size: 5px;
+	color: #808080;
+	font-family: cursive;
+}
+
 .ad-banner{
 	width: 320px;
 	margin: 0 auto;
